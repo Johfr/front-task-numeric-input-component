@@ -1,0 +1,29 @@
+.container {
+  @apply max-w-xl w-full mx-auto p-5 bg-white lg:max-w-5xl;
+}
+
+.button {
+  @apply px-3 py-2 text-white rounded-md bg-blue-400 transition-all;
+
+  &.--outline {
+    @apply text-black transition-all bg-transparent;
+  }
+  &.--underline {
+    @apply text-black bg-transparent;
+    text-decoration: underline;
+  }
+  &.--link {
+    @apply p-0 text-blue-400 bg-transparent;
+  }
+  &:hover {
+    @apply opacity-80;
+  }
+}
+
+.title-h1 {
+  @apply mb-5 text-2xl font-bold text-left;
+}
+
+.card {
+  @apply flex items-center justify-center gap-2 max-w-80 mx-auto p-5 shadow-md;
+}
